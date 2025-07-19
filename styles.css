@@ -1,0 +1,58 @@
+body {width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  color: #404040;
+  background-color: #ffff00;
+  font-family: "Helvetica Light";
+  letter-spacing: -0.4px;
+  font-size: 24px;
+  }
+
+h1 {
+font-family: "Akzidenz Grotesk Pro Super";
+font-weight: normal;
+color: #404040;
+font-size: 28px;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: -0.4px;
+}
+
+h2 {font-weight: normal;
+font-family: "Akzidenz Grotesk Pro Super";
+color: #404040;
+font-size: 28px;
+letter-spacing: -0.4px;}
+
+@font-face {
+  font-family: "Akzidenz Grotesk Pro Super";
+  src: url(fonts/akzidenzgroteskpro_super.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Akzidenz Grotesk Light Condensed";
+  src: url(fonts/akzidenzgroteskpro_lightcn.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  src: url(fonts/HELN.TTF);
+  font-display: swap;
+}
+
+a {
+  color: #404040;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+color: #ffff00;
+background-color: #404040;
+  text-decoration: none;
+}
+a:visited {
+  color: #404040;
+  text-decoration: underline;
+}
