@@ -62,4 +62,5 @@ background-color: #ffff00;
 a:visited {
   color: #404040;
   text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,0.5);
 }
