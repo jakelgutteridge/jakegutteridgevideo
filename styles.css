@@ -58,7 +58,8 @@ a {
 a:hover, a:focus {
 color: #404040;
 background-color: #ffff00;
-  text-decoration: none;
+text-decoration: none;
+font-family: "Akzidenz Grotesk Pro Super";
 }
 a:visited {
   color: #404040;
