@@ -2,8 +2,8 @@ body {width: 100%;
   max-width: 800px;
   margin: auto;
   padding: 20px;
-  color: #404040;
-  background-color: #ffff00;
+  color: #ffff00;
+  background-color: #404040;
   font-family: "Akzidenz Grotesk Pro Light";
   letter-spacing: -0.4px;
   font-size: 24px;
@@ -12,7 +12,7 @@ body {width: 100%;
 h1 {
 font-family: "Akzidenz Grotesk Pro Super";
 font-weight: normal;
-color: #404040;
+color: #ffff00;
 font-size: 48px;
 text-align: center;
 text-transform: none;
@@ -21,7 +21,7 @@ letter-spacing: -0.4px;
 
 h2 {font-weight: normal;
 font-family: "Akzidenz Grotesk Pro Light";
-color: #404040;
+color: #ffff00;
 font-size: 28px;
 letter-spacing: -0.4px;}
 
@@ -50,12 +50,12 @@ letter-spacing: -0.4px;}
 }
 
 a {
-  color: #404040;
+  color: #ffff00;
   text-decoration: underline;
 }
 a:hover, a:focus {
-color: #ffff00;
-background-color: #404040;
+color: #404040;
+background-color: #ffff00;
   text-decoration: none;
 }
 a:visited {
