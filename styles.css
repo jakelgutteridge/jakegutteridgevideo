@@ -52,6 +52,7 @@ letter-spacing: -0.4px;}
 a {
   color: #ffff00;
   text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,0.5);
 }
 a:hover, a:focus {
 color: #404040;
