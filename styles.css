@@ -32,6 +32,12 @@ letter-spacing: -0.4px;}
 }
 
 @font-face {
+  font-family: "Akzidenz Grotesk Pro Light";
+  src: url(fonts/AKZIDENZGROTESKPRO_LIGHT.TTF);
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Akzidenz Grotesk Light Condensed";
   src: url(fonts/akzidenzgroteskpro_lightcn.ttf);
   font-display: swap;
