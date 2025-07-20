@@ -27,25 +27,25 @@ letter-spacing: -0.4px;}
 
 @font-face {
   font-family: "Akzidenz Grotesk Pro Super";
-  src: url(fonts/akzidenzgroteskpro_super.ttf);
+  src: url(/fonts/akzidenzgroteskpro_super.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Akzidenz Grotesk Pro Light";
-  src: url(fonts/AKZIDENZGROTESKPRO_LIGHT.TTF);
+  src: url(/fonts/AKZIDENZGROTESKPRO_LIGHT.TTF);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Akzidenz Grotesk Light Condensed";
-  src: url(fonts/akzidenzgroteskpro_lightcn.ttf);
+  src: url(/fonts/akzidenzgroteskpro_lightcn.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: "Helvetica Light";
-  src: url(fonts/HELN.TTF);
+  src: url(/fonts/HELN.TTF);
   font-display: swap;
 }
 
