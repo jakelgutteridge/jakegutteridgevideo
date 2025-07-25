@@ -1,32 +1,179 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>Jake Gutteridge</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/x-icon" href="/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Grid with Frosted Hover</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  border: 0px;
-}
-</style>
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+    }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .grid-item {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    .grid-item::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      z-index: 0;
+      pointer-events: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .grid-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .frosted-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 2;
+    }
+
+    .frosted-text {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 0 8%;
+      text-align: center;
+    }
+
+    /* Hover effect for desktop: show overlay + dim */
+    @media (min-width: 769px) {
+      .grid-item:hover::before {
+        background-color: rgba(0, 0, 0, 0.4); /* Hover dimming */
+      }
+
+      .grid-item:hover .frosted-overlay {
+        opacity: 1;
+      }
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        height: auto;
+      }
+
+      .grid-item {
+        aspect-ratio: 1 / 1;
+      }
+
+      /* Always dimmed on mobile 
+      .grid-item::before {
+        background-color: rgba(0, 0, 0, 0.0);
+      }
+      */
+
+      /* Always show overlay, no blur */
+      .frosted-overlay {
+        opacity: 1 !important;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+
+      .frosted-text {
+        color: white;
+      }
+    }
+  </style>
 </head>
-
-<h1>
-
 <body>
 
-<div>
-  <p>Website under construction!
-  <br>Please check back soon :-)</p>
-</div>
+<center>
+<h1>Name of productions</h1>
+</center>
+
+  <div class="grid">
+    <div class="grid-item" style="background-image: url('https://b2769822.smushcdn.com/2769822/wp-content/uploads/2018/10/how-to-answer-tell-me-about-yourself-1024x512.jpg?lossy=1&strip=1&webp=1');">
+      <a href="#link1">
+        <div class="frosted-overlay">
+          <div class="frosted-text">Corporate and<br>Training Media</div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item" style="background-image: url('https://pbblogassets.s3.amazonaws.com/uploads/2016/06/Corporate-Video-Production-Cover.jpg');">
+      <a href="#link2">
+        <div class="frosted-overlay">
+          <div class="frosted-text">Promotional</div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item" style="background-image: url('https://source.unsplash.com/random/800x800?nature3');">
+      <a href="#link3">
+        <div class="frosted-overlay">
+          <div class="frosted-text">Documentary</div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item" style="background-image: url('https://source.unsplash.com/random/800x800?nature4');">
+      <a href="#link4">
+        <div class="frosted-overlay">
+          <div class="frosted-text">Education Sector</div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item" style="background-image: url('https://source.unsplash.com/random/800x800?nature5');">
+      <a href="#link5">
+        <div class="frosted-overlay">
+          <div class="frosted-text">Experimental</div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item" style="background-image: url('https://source.unsplash.com/random/800x800?nature6');">
+      <a href="#link6">
+        <div class="frosted-overlay">
+          <div class="frosted-text">About Jake</div>
+        </div>
+      </a>
+    </div>
+  </div>
 
 </body>
 </html>
-
